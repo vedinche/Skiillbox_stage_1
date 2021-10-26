@@ -1,26 +1,35 @@
 /* Basic reset */
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-	font-family: 'font', sans-serif;
+  font-family: 'font', sans-serif;
 }
+
 /* Basic reset end  */
 
 .main-content {
@@ -58,18 +67,15 @@ body {
 }
 
 .title {
-  margin: 0;
   margin-bottom: 40px;
 }
 
 .subtitle {
-  margin: 0;
   margin-bottom: 10px;
 }
 
 .text {
   width: 872px;
-  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -108,8 +114,8 @@ body {
 }
 
 .img-text {
-display: inline-block;
-width: 872px;
-margin: 0;
-margin-bottom: 40px;
+  display: inline-block;
+  width: 872px;
+  margin: 0;
+  margin-bottom: 40px;
 }
