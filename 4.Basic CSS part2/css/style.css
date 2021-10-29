@@ -1,6 +1,6 @@
 /* Basic reset */
 html {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 *,
