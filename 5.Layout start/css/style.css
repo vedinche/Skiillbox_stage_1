@@ -54,9 +54,9 @@ body {
 .link {
   display: inline-block;
   padding: 24px 49px;
-	font-size: 18px;
-	font-weight: 700;
-	background: #3f2aff;
+  font-size: 18px;
+  font-weight: 700;
+  background: #3f2aff;
 }
 
 .link:not(:last-child) {
@@ -64,11 +64,11 @@ body {
 }
 
 .link-download {
-	padding-left: 30px;
-	font-size: 18px;
-	font-weight: 700;
-	color: #3f2aff;
-	background: transparent url('../img/download.png') no-repeat left center / contain;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f2aff;
+  background: transparent url('../img/download.png') no-repeat left center / contain;
 }
 
 .container {
@@ -79,58 +79,58 @@ body {
 
 .title {
   margin-bottom: 40px;
-	font-size: 60px;
-	line-height: 1em;
-	font-weight: 400;
-	color: #333;
+  font-size: 60px;
+  line-height: 1em;
+  font-weight: 400;
+  color: #333;
 }
 
 .subtitle {
   margin-bottom: 10px;
-	font-size: 40px;
-	line-height: 1.15em;
-	color: #333;
+  font-size: 40px;
+  line-height: 1.15em;
+  color: #333;
 }
 
 .sub-subtitle {
-	font-size: 30px;
-	line-height: 1.13em;
-	color: #333;
+  font-size: 30px;
+  line-height: 1.13em;
+  color: #333;
 }
 
 .text {
   width: 872px;
   margin-bottom: 40px;
-	font-size: 20px;
-	line-height: 1.6em;
-	color: #333;
+  font-size: 20px;
+  line-height: 1.6em;
+  color: #333;
 }
 
 .text-decor {
-	width: 100%;
-	padding: 50px 95px;
-	border-radius: 20px;
-	font-size: 30px;
-	color: #fff;
-	background: #3f2aff;
+  width: 100%;
+  padding: 50px 95px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #fff;
+  background: #3f2aff;
 }
 
 .section {
   margin-bottom: 40px;
   padding: 30px;
-	border-radius: 20px;
+  border-radius: 20px;
   background-color: #f3f3f3;
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
 
 .section-img-1 {
-	background-image: url('../img/decorate-1.png');
+  background-image: url('../img/decorate-1.png');
 }
 
 .section-img-2 {
-	background-image: url('../img/decorate-2.png');
+  background-image: url('../img/decorate-2.png');
 }
 
 .section:last-child {
@@ -149,8 +149,8 @@ body {
 
 .list {
   padding-left: 15px;
-	font-size: 20px;
-	color: #3f2aff;
+  font-size: 20px;
+  color: #3f2aff;
 }
 
 .list-item:not(:last-child) {
@@ -158,11 +158,11 @@ body {
 }
 
 .list-item::marker {
-	color: #3f2aff
+  color: #3f2aff
 }
 
 .list-item-link {
-	border-bottom: 1px solid #3f2aff;
+  border-bottom: 1px solid #3f2aff;
 }
 
 .img {
@@ -175,16 +175,16 @@ body {
   width: 872px;
   margin: 0;
   margin-bottom: 40px;
-	font-size: 0;
+  font-size: 0;
 }
 
 .caption {
-	padding: 19px 0;
-	border: 1px solid #b6b6b6;
-	border-top: none;
-	font-size: 14px;
-	font-weight: 400;
-	text-align: center;
+  padding: 19px 0;
+  border: 1px solid #b6b6b6;
+  border-top: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* Modules start */
@@ -220,22 +220,89 @@ body {
   color: #3f2aff;
 }
 
-.main-list  {
-  margin-bottom: 50px;
+.main-list {
   padding: 0;
   font-size: 0;
 }
 
+.main {
+  margin-bottom: 50px;
+}
+
 .main-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 572px;
+  height: 505px;
+  margin: 0 25px 25px 0;
+  padding: 205px 25px 25px 25px;
   font-size: 20px;
+  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+}
+
+.main-list :nth-child(even) {
+  margin-right: 0;
+}
+
+.main-list :nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+
+.item-img-1 {
+  background: transparent url('../img/start.jpg') no-repeat top left / contain;
+}
+
+.item-img-2 {
+  background: transparent url('../img/html.jpg') no-repeat top left / contain;
+}
+
+.item-img-3 {
+  background: transparent url('../img/css.jpg') no-repeat top left / contain
+}
+
+.item-img-4 {
+  background: transparent url('../img/layout.jpg') no-repeat top left / contain;
 }
 
 .list-text {
-  padding: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
+.item-title h2 {
+  font-size: 40px;
+  color: #3f2aff;
+}
+
+.item-text {
+  font-size: 20px;
+  line-height: 1.65em;
+  color: #333;
+}
+
+.item-number  {
+  position: absolute;
+  top: 434px;
+  left: 502px;
+  font-size: 40px;
+  color: #eaeaea;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 25px 76px;
+  margin-bottom: 50px;
+  outline: 2px solid #3f2aff;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f2aff;
+  cursor: pointer;
+}
 /* Modules end */
