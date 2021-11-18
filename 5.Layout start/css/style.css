@@ -203,15 +203,12 @@ body {
   margin-bottom: 25px;
 }
 
-.naw-arrow {
-  position: relative;
-  bottom: 3px;
-  margin-right: 7px;
-}
-
-.nav-text {
-  font-size: 20px;
-  color: #3f2aff;
+.nav-link {
+	display: inline-block;
+	padding-left: 50px;
+	color: #3f2aff;
+	font-size: 20px;
+	background: transparent url('../img/arrow.svg') no-repeat left center;
 }
 
 .modules-title {
@@ -236,9 +233,8 @@ body {
   width: 572px;
   height: 505px;
   margin: 0 25px 25px 0;
-  padding: 205px 25px 25px 25px;
   font-size: 20px;
-  box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
 .main-list :nth-child(even) {
@@ -249,21 +245,25 @@ body {
   margin-bottom: 0;
 }
 
+.item-img {
+	width: 572px;
+	height: 180px;
+}
 
 .item-img-1 {
-  background: transparent url('../img/start.jpg') no-repeat top left / contain;
+  background-image: url('../img/start.jpg');
 }
 
 .item-img-2 {
-  background: transparent url('../img/html.jpg') no-repeat top left / contain;
+  background-image: url('../img/html.jpg');
 }
 
 .item-img-3 {
-  background: transparent url('../img/css.jpg') no-repeat top left / contain
+  background: url('../img/css.jpg');
 }
 
 .item-img-4 {
-  background: transparent url('../img/layout.jpg') no-repeat top left / contain;
+  background: url('../img/layout.jpg');
 }
 
 .list-text {
@@ -271,9 +271,13 @@ body {
   list-style-type: none;
 }
 
-.item-title h2 {
+.item-title {
   font-size: 40px;
   color: #3f2aff;
+}
+
+.item-body {
+	padding: 25px;
 }
 
 .item-text {
@@ -282,10 +286,10 @@ body {
   color: #333;
 }
 
-.item-number  {
+.item-number {
   position: absolute;
-  top: 434px;
-  left: 502px;
+  bottom: 25px;
+  right: 25px;
   font-size: 40px;
   color: #eaeaea;
 }
@@ -305,4 +309,5 @@ body {
   color: #3f2aff;
   cursor: pointer;
 }
+
 /* Modules end */
