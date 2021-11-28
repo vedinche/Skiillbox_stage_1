@@ -1,0 +1,285 @@
+/* Сброс стилей */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 1200px;
+	font-family: 'font', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.test {
+	outline: 1px solid red;
+}
+
+.section-offset {
+	padding-top: 87px;
+	padding-bottom: 160px;
+}
+
+/* header start*/
+.header {
+	padding: 30px 0;
+}
+
+.header-container {
+	align-items: center;
+}
+
+.header-logo {
+	margin-right: auto;
+}
+
+.header-nav {
+	margin-right: 52px;
+}
+
+.header-list-item:not(:last-child) {
+	margin-right: 52px;
+}
+
+/* header end */
+
+/* hero start */
+.hero {
+	padding: 100px 0;
+}
+
+.hero-content {
+	max-width: 50%;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.hero-title {
+	margin-bottom: 26px;
+}
+
+.hero-desc {
+	margin-bottom: 34px;
+}
+
+.hero-btn {
+	margin-bottom: 14px;
+}
+
+/* hero end */
+
+/* services start*/
+.services-title {
+	margin-bottom: 21px;
+	text-align: center;
+}
+
+.services-descr {
+	margin-bottom: 54px;
+	text-align: center;
+}
+
+.services-list-item {
+	flex-direction: column;
+	align-items: center;
+	padding: 62px 30px;
+	outline: 1px solid blue;
+}
+
+.services-list-item:not(:nth-child(4n)) {
+	margin-right: 30px;
+}
+
+.services-item-icon {
+	margin-bottom: 27px;
+}
+
+.services-item-title {
+	margin-bottom: 15px;
+}
+
+.services-item-desc {
+	text-align: center;
+}
+
+/* services end */
+
+/* articles start */
+.articles-title {
+	margin-bottom: 42px;
+}
+
+.articles-list {
+	flex-wrap: wrap;
+}
+
+.articles-list-item {
+	width: 570px;
+	margin-bottom: 30px;
+	outline: 1px solid coral;
+}
+
+.articles-list-item:not(:nth-child(2n)) {
+	margin-right: 30px;
+}
+
+.blog-preview-image {
+	object-fit: cover;
+}
+
+.blog-preview-text {
+	padding: 30px;
+}
+
+.blog-preview-time {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.blog-preview-title {
+	margin-bottom: 15px;
+}
+
+/* articles end */
+
+/* clients start */
+.clients-title {
+	margin-bottom: 42px;
+}
+
+.client-list-item {
+	flex-direction: column;
+	width: 370px;
+	padding: 40px;
+	outline: 1px solid green;
+}
+
+.client-list-item:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+
+.clients-desc {
+	padding: 30px;
+}
+
+.clients-user {
+	margin-top: auto;
+	/*Чтобы блок всегда был прижат к низу*/
+	align-items: center;
+}
+
+.clients-avatar {
+	flex-shrink: 0;
+	width: 67px;
+	margin-right: 17px;
+}
+
+.clients-name {
+	margin-bottom: 5px;
+}
+
+/* clients end */
+
+/* contacts start */
+.contacts-title {
+	margin-bottom: 110px;
+}
+
+.contacts-address {
+	font-style: normal;
+}
+
+.contacts-list-item {
+	flex-direction: column;
+	width: 300px;
+	outline: 1px solid black;
+}
+
+.contacts-list-item:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+
+.contacts-item-title {
+	margin-bottom: 30px;
+}
+
+.contacts-item-link:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+/* contacts end */
+
+/* footer start */
+.footer {
+	padding: 45px 0;
+}
+
+.footer-container {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+	align-items: center;
+}
+
+.footer-logo {
+	margin-right: 25px;
+}
+
+.footer-list-item:not(:last-child) {
+	margin-right: 28px;
+}
+
+.footer-nav {
+	margin-right: 56px;
+}
+
+.social-list-item:not(:last-child) {
+	margin-right: 32px;
+}
+
+/* footer end */
