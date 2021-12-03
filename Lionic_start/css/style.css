@@ -26,7 +26,7 @@ html {
 		url('../fonts/OpenSans-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
-	font-display: swap;	
+	font-display: swap;
 }
 
 @font-face {
@@ -84,10 +84,6 @@ p {
 	margin: 0 auto;
 }
 
-.test {
-	outline: 1px solid red;
-}
-
 .section-offset {
 	padding-top: 87px;
 	padding-bottom: 160px;
@@ -96,6 +92,8 @@ p {
 /* header start*/
 .header {
 	padding: 30px 0;
+	border-bottom: 1px solid #e4e4e4;
+	background: #fff;
 }
 
 .header-container {
@@ -114,11 +112,33 @@ p {
 	margin-right: 52px;
 }
 
+.header-link {
+	font-size: 15px;
+	font-weight: 600;
+	color: #1c1c1c;
+}
+
+.btn {
+	border-radius: 3px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background: #3172b9;
+}
+
+.header-btn {
+	padding: 15px 10px;
+	min-width: 130px;
+}
+
 /* header end */
 
 /* hero start */
 .hero {
-	padding: 100px 0;
+	padding-top: 113px;
+	padding-bottom: 134px;
+	background: #fff url('../img/hero-bg.jpg') no-repeat center / cover;
 }
 
 .hero-content {
@@ -129,22 +149,59 @@ p {
 
 .hero-title {
 	margin-bottom: 26px;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.3em;
 }
 
-.hero-desc {
+.hero-descr {
 	margin-bottom: 34px;
+	font-size: 16px;
+	line-height: 1.55em;
+	color: #787878;
+}
+
+.hero-wrap {
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero-btn {
+	min-width: 230px;
 	margin-bottom: 14px;
+	padding: 20px 10px;
 }
 
+.hero-secure {
+	padding-left: 27px;
+	font-size: 11px;
+	line-height: 1.55em;
+	text-transform: uppercase;
+	color: #787878;
+	background: url('../img/secure.svg') no-repeat left center / 14px 17px;
+}
 /* hero end */
 
 /* services start*/
+.services {
+	border-bottom: 1px solid #e4e4e4;
+}
+.section-title {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1.3em;
+	color: #1c1c1c;
+}
+
 .services-title {
 	margin-bottom: 21px;
 	text-align: center;
+}
+
+.section-descr {
+	font-size: 16px;
+	line-height: 1.37em;
+	color: #787878;
 }
 
 .services-descr {
@@ -155,8 +212,9 @@ p {
 .services-list-item {
 	flex-direction: column;
 	align-items: center;
-	padding: 62px 30px;
-	outline: 1px solid blue;
+	padding: 60px 30px;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
 }
 
 .services-list-item:not(:nth-child(4n)) {
@@ -169,10 +227,16 @@ p {
 
 .services-item-title {
 	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.3em;
 }
 
 .services-item-desc {
 	text-align: center;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #787878;
 }
 
 /* services end */
