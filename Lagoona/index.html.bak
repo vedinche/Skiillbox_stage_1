@@ -22,12 +22,12 @@
             +7 495 322 54 48
           </a>
         </address>
-        <a class="link-color header-auth-link" href="#">
+        <a class="header-auth-link" href="#">
           Личный кабинет
         </a>
       </div>
       <div class="header-bottom-block flex">
-        <nav class="header-nav flex">
+        <nav class="header-nav">
           <ul class=" list-reset header-list flex">
             <li class="header-item">
               <a class="header-item-link" href="#about-us">
@@ -90,7 +90,7 @@
                 <span class="special-left-price">
                   от&nbsp;55&nbsp;000&nbsp;р
                 </span>
-                <a class="special-link link-color" href="#">
+                <a class="special-link" href="#">
                   Подробнее
                 </a>
               </div>
@@ -103,7 +103,7 @@
                 <span class="special-left-price">
                   от&nbsp;30&nbsp;000&nbsp;р
                 </span>
-                <a class="special-link link-color" href="#">
+                <a class="special-link" href="#">
                   Подробнее
                 </a>
               </div>
@@ -118,7 +118,7 @@
                 <span class="special-right-price">
                   от&nbsp;5000&nbsp;р
                 </span>
-                <a class="special-link link-color" href="#">
+                <a class="special-link" href="#">
                   Подробнее
                 </a>
               </div>
@@ -132,7 +132,7 @@
         <h2 class="section-title about-title">
           О нас
         </h2>
-        <p class="section-descr about-descr">
+        <p class="about-descr">
           Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечет за&nbsp;собой
           процесс
           внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
@@ -154,11 +154,11 @@
             <div class="services-img services-img-1"></div>
             <div class="services-text">
               <h3 class="services-subtitle">
-                <a class="services-link link-color" href="#">
+                <a class="services-link" href="#">
                   Эксклюзивное обслуживание
                 </a>
               </h3>
-              <p class="section-descr services-descr">
+              <p class="services-descr">
                 Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
               </p>
             </div>
@@ -168,11 +168,11 @@
             </div>
             <div class="services-text">
               <h3 class="services-subtitle">
-                <a class="services-link link-color" href="#">
+                <a class="services-link" href="#">
                   Аренда банкетных залов
                 </a>
               </h3>
-              <p class="section-descr services-descr">
+              <p class="services-descr">
                 Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
               </p>
             </div>
@@ -181,11 +181,11 @@
             <div class="services-img services-img-3"></div>
             <div class="services-text">
               <h3 class="services-subtitle">
-                <a class="services-link link-color" href="#">
+                <a class="services-link" href="#">
                   Сауны, бассейны, бани, фитнес-залы
                 </a>
               </h3>
-              <p class="section-descr services-descr">
+              <p class="services-descr">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
               </p>
             </div>
@@ -194,11 +194,11 @@
             <div class="services-img services-img-4"></div>
             <div class="services-text">
               <h3 class="services-subtitle">
-                <a class="services-link link-color" href="#">
+                <a class="services-link" href="#">
                   Охраняемые автомобильные стоянки
                 </a>
               </h3>
-              <p class="section-descr services-descr">
+              <p class="services-descr">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
               </p>
             </div>
@@ -215,15 +215,15 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-1"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
               </p>
             </div>
           </li>
           <li class="privilege-item flex">
-            <div class="privilege-img privilege-img-2"></div>
+            <div class="privilege-img privilge-img-2"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Значимость этих проблем настолько очевидна, что вопрос остается открытым
               </p>
             </div>
@@ -231,15 +231,15 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-3"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Таким образом реализация плановых заданий играет важную роль для понимания
               </p>
             </div>
           </li>
           <li class="privilege-item flex">
-            <div class="privilege-img privilege-img-4"></div>
+            <div class="privilege-img privilage-img-4"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Повседневная практика показывает, что сложившаяся структура организации
               </p>
             </div>
@@ -247,7 +247,7 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-5"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
               </p>
             </div>
@@ -255,7 +255,7 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-6"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Консультация с&nbsp;активом влечет за&nbsp;собой процесс внедрения услуг нашего сервиса
               </p>
             </div>
@@ -263,7 +263,7 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-7"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Повседневная практика показывает, что дальнейшее развитие различных форм
               </p>
             </div>
@@ -271,7 +271,7 @@
           <li class="privilege-item flex">
             <div class="privilege-img privilege-img-8"></div>
             <div class="privilege-text">
-              <p class="section-descr privilege descr">
+              <p class="privilege desc">
                 Значимость этого настолько очевидна, что консультация наших экспертов помогает
               </p>
             </div>
@@ -293,11 +293,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      4&nbsp;698&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;4&nbsp;698&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -327,11 +325,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      5&nbsp;148&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;5&nbsp;148&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -361,11 +357,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;254&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;254&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -395,11 +389,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;320&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;320&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -429,11 +421,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;457&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;457&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -463,11 +453,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;320&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;320&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
@@ -497,11 +485,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;505&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;505&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
@@ -531,11 +517,9 @@
               <div class="accom-text">
                 <div class="accom-text-header flex">
                   <div class="accom-price-wrap">
-                    <span class="accom-price-left">от</span>
-                    <span class="accom-price-center">
-                      6&nbsp;824&nbsp;р
+                    <span class="accom-price">
+                      от&nbsp;6&nbsp;824&nbsp;р&nbsp;/ ночь
                     </span>
-                    <span class="accom-price-right">/ ночь</span>
                   </div>
                   <div class="accom-rating">
                     <img class="raiting-img" src="img/star.svg" alt="Рейтинг отеля 4 из 5">

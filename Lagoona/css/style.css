@@ -25,9 +25,42 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegular');
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerMedium');
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerBold');
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1170px;
-  font-family: 'font', sans-serif;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background: #e5e5e5;
 }
 
 .list-reset {
@@ -55,6 +88,30 @@ body {
   margin-bottom: 70px;
 }
 
+.link-color {
+  color: #cc9933;
+}
+
+.btn {
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1;
+  color: #cc9933;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+}
+
+.section-descr {
+  font-size: 16px;
+  line-height: 2em;
+}
+
 /* header-start */
 .header-top-block {
   align-items: center;
@@ -67,22 +124,57 @@ body {
 
 .header-phone {
   margin-right: auto;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #666;
+}
+
+.header-auth-link {
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 1;
+  background: url('../img/header_arr.svg')
+  no-repeat left center / 24px 24px;
 }
 
 .header-bottom-block {
-  padding: 14px 45px;
+  padding: 10px 45px;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.header-nav {
+  align-items: center;
+  min-height: 50px;
+  padding-right: 56px;
+  border-right: 1px solid #e1e1e1;
 }
 
 .header-item:not(:last-child) {
   margin-right: 45px;
 }
 
-.header-left-btn {
-  margin-right: 40px;
+.header-item-link {
+  font-size: 16px;
+  line-height: 1;
+  color: #666;
 }
 
+.header-left-btn {
+  min-width: 108px;
+  margin-right: 40px;
+  padding: 13px 4px;
+}
+
+.header-right-btn {
+  min-width: 178px;
+  padding: 13px 4px;
+}
 /* header-end */
+
 .section-title {
   padding-left: 40px;
 }
@@ -102,8 +194,14 @@ body {
 
 .special-section {
   width: 574px;
-  padding: 40px;
-  background: #808080;
+  padding: 40px 0 40px 40px;
+  border-radius: 15px;
+}
+
+.special-section-wrap {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
 }
 
 .special-left {
@@ -113,19 +211,12 @@ body {
 .left-section-top {
   flex-basis: 50%;
   margin-bottom: 23px;
+  background: url('../img/maldives.jpg') no-repeat center center / cover;
 }
 
 .left-section-bottom {
   flex-basis: 50%;
-}
-
-.right-section {
-  min-height: 100%;
-  align-items: flex-end;
-}
-
-.special-section-wrap {
-  flex-direction: column;
+  background: url('../img/hot-tour.jpg') no-repeat center center / cover;
 }
 
 .special-left-title,
@@ -133,9 +224,47 @@ body {
   margin-bottom: 15px;
 }
 
+.special-left-title {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+}
+
+.special-left-price {
+  font-size: 20px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.special-link {
+  padding-right: 24px;
+  font-size: 16px;
+  line-height: 1;
+  background: url('../img/right-arr.svg')
+  no-repeat right center / 12px;
+}
+
+.right-section {
+  min-height: 100%;
+  align-items: flex-end;
+  background: url('../img/rooms.jpg') no-repeat center center / cover;
+}
+
+.special-right-title {
+  font-size: 60px;
+  line-height: 1;
+  color: #fff;
+}
+
 .special-left-price,
 .special-right-price {
   margin-bottom: 47px;
+}
+
+.special-right-price {
+  font-size: 30px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
 }
 /* special-end */
 
@@ -161,18 +290,58 @@ body {
 .services-item {
   width: 574px;
   margin-bottom: 23px;
+  border-radius: 15px;
+  background: #fff;
+  overflow: hidden;
 }
 
 .services-item:not(:nth-child(2n)) {
   margin-right: 22px;
 }
 
+.services-img {
+  min-height: 165px;
+}
+
+.services-img-1 {
+  background: url('../img/champagne.jpg')
+  no-repeat center center / cover;
+}
+
+.services-img-2 {
+  background: url('../img/banquet.jpg')
+  no-repeat center center / cover;
+}
+
+.services-img-3 {
+  background: url('../img/fitness.jpg')
+  no-repeat center center / cover;
+}
+
+.services-img-4 {
+  background: url('../img/parking.jpg')
+  no-repeat center center / cover;
+}
+
 .services-text {
-  padding: 40px;
+  padding: 26px 0 50px 46px;
 }
 
 .services-subtitle {
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.services-link {
+  padding-right: 24px;
+  background: url('../img/right-arr.svg')
+  no-repeat right center / 12px;
+}
+
+.services-descr {
+  max-width: 402px;
 }
 /* services-end */
 
@@ -187,12 +356,61 @@ body {
 
 .privilege-item {
   width: 276px;
+  flex-direction: column;
   margin-bottom: 23px;
-  padding: 40px;
+  padding: 42px 42px 42px 45px;
+  border-radius: 15px;
+  background: #fff;
 }
 
 .privilege-item:not(:nth-child(4n)) {
   margin-right: 22px;
+}
+
+.privilege-img {
+  width: 66px;
+  height: 66px;
+  margin-bottom: 10px;
+}
+
+.privilege-img-1 {
+  background: url('../img/bathtub.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-2 {
+  background: url('../img/hanger.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-3 {
+  background: url('../img/heating.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-4 {
+  background: url('../img/hotel-key.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-5 {
+  background: url('../img/parking.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-6 {
+  background: url('../img/reception.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-7 {
+  background: url('../img/security-box.svg')
+  no-repeat center center/ cover;
+}
+
+.privilege-img-8 {
+  background: url('../img/swimming-pool.svg')
+  no-repeat center center/ cover;
 }
 /* privilage-end */
 
@@ -208,14 +426,22 @@ body {
 .accom-item {
   width: 374px;
   margin-bottom: 23px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
 }
 
 .accom-item:not(:nth-child(3n)) {
   margin-right: 23px;
 }
 
+.accom-img {
+  display: block;
+  object-fit: cover;
+}
+
 .accom-bottom {
-  padding: 40px;
+  padding: 36px 46px 40px 46px;
 }
 
 .accom-text-header {
@@ -223,17 +449,53 @@ body {
   margin-bottom: 16px;
 }
 
+.accom-price-left {
+  font-size: 16px;
+  line-height: 1;
+  color: #999;
+}
+
+.accom-price-center {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .accom-subtitle {
   margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .accom-location {
   display: inline-block;
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1;
+  color: #999;
+}
+
+.accom-btn {
+  min-width: 100px;
+  padding: 13px 4px;
 }
 
 .accom-more {
   align-items: flex-end;
-  padding-bottom: 40px;
+  padding: 0 0 26px 54px;
+  border-radius: 15px;
+  background: url('../img/paradise.jpg')
+  no-repeat center center / cover;
+}
+
+.accom-more-link {
+  padding-right: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  color: #fff;
+  background: url('../img/right-white-arr.svg')
+  no-repeat right center / 12px;
 }
 /* accom-end */
