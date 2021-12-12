@@ -499,3 +499,57 @@ body {
   no-repeat right center / 12px;
 }
 /* accom-end */
+
+/* book-tour start */
+.book-container {
+	padding: 38px 45px 70px 40px;
+	border-radius: 15px;
+	background: #e9e9e9
+}
+
+.book-title {
+	margin-bottom: 19px;
+	padding-left: 0;
+}
+
+.book-form {
+	justify-content: space-between;
+	padding: 28px;
+	border-radius: 15px;
+	background: #fff;
+}
+
+.form-section-wrap {
+	padding: 0 20px;
+	border: 1px solid red;
+}
+
+.form-section-wrap:first-child {
+	padding-left: 0;
+}
+
+.form-section-wrap:last-of-type {
+	padding-right: 30px;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 12px;
+	line-height: 1;
+}
+
+.form-select {
+	width: 160px;
+	border: none;
+	background: #fff;
+}
+
+.form-input {
+	font-size: 16px;
+	width: 100px;
+	height: 16px;
+	border: none;
+}
+
+/* book-tour end */
