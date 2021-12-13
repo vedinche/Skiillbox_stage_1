@@ -101,6 +101,7 @@ body {
 }
 
 .section-title {
+	padding-left: 40px;
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
@@ -174,10 +175,6 @@ body {
   padding: 13px 4px;
 }
 /* header-end */
-
-.section-title {
-  padding-left: 40px;
-}
 
 /* special-start */
 .special-title {
@@ -521,7 +518,7 @@ body {
 
 .form-section-wrap {
 	padding: 0 20px;
-	border: 1px solid red;
+	border-right: 1px solid #e1e1e1;
 }
 
 .form-section-wrap:first-child {
@@ -529,6 +526,7 @@ body {
 }
 
 .form-section-wrap:last-of-type {
+	margin-right: 20px;
 	padding-right: 30px;
 }
 
@@ -546,10 +544,103 @@ body {
 }
 
 .form-input {
-	font-size: 16px;
-	width: 100px;
+	width: 122px;
 	height: 16px;
 	border: none;
 }
 
+.form-input-number {
+	border-bottom: 1px solid #ccc;
+}
+
+.form-btn {
+	min-width: 100px;
+	padding: 13px 4px;
+}
 /* book-tour end */
+
+/* contacts-start */
+.contacts {
+	margin-bottom: 20px;
+}
+
+.contacts-title {
+	margin-bottom: 26px;
+}
+
+.contacts-wrap {
+	padding: 44px 44px 46px 46px;
+	border-radius: 15px;
+	background: #fff;
+}
+
+.contacts-left {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-right: 50px;
+}
+
+.contacts-item {
+	width: 375px;
+	justify-content: space-between;
+	padding: 25px 0;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.contacts-item:first-child {
+	padding-top: 0;
+}
+
+.contacts-subtitle {
+	font-size: 20px;
+	line-height: 1;
+}
+
+.contacts-address {
+	width: 230px;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-style: normal;
+}
+
+.contacts-phones {
+	width: 230px;
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-style: normal;
+	color: #cc9933;
+}
+
+.contacts-mail {
+	flex-direction: column;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-style: normal;
+}
+
+.contacts-mail-link {
+	color: #cc9933;
+}
+
+.contacts-mail-desc {
+	color: #999;
+}
+
+.contacts-schedule {
+	width: 220px;
+	align-items: flex-start;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-style: normal;
+}
+
+.contacts-button {
+	min-width: 205px;
+	padding: 26px 4px;
+	font-weight: 700;
+}
+/* contacts-end */
+
