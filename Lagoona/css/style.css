@@ -208,12 +208,14 @@ body {
 .left-section-top {
   flex-basis: 50%;
   margin-bottom: 23px;
-  background: url('../img/maldives.jpg') no-repeat center center / cover;
+  background: url('../img/maldives.jpg') 
+	no-repeat center center / cover;
 }
 
 .left-section-bottom {
   flex-basis: 50%;
-  background: url('../img/hot-tour.jpg') no-repeat center center / cover;
+  background: url('../img/hot-tour.jpg') 
+	no-repeat center center / cover;
 }
 
 .special-left-title,
@@ -244,7 +246,8 @@ body {
 .right-section {
   min-height: 100%;
   align-items: flex-end;
-  background: url('../img/rooms.jpg') no-repeat center center / cover;
+  background: url('../img/rooms.jpg') 
+	no-repeat center center / cover;
 }
 
 .special-right-title {
@@ -608,6 +611,9 @@ body {
 	width: 230px;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.tel {
 	font-size: 16px;
 	line-height: 1.5em;
 	font-style: normal;
@@ -616,12 +622,12 @@ body {
 
 .contacts-mail {
 	flex-direction: column;
+}
+
+.mail {
 	font-size: 16px;
 	line-height: 1.5em;
 	font-style: normal;
-}
-
-.contacts-mail-link {
 	color: #cc9933;
 }
 
@@ -642,5 +648,104 @@ body {
 	padding: 26px 4px;
 	font-weight: 700;
 }
+
+.contacts-img {
+	object-fit: cover;
+}
 /* contacts-end */
+
+/* footer start */
+.footer {
+	margin-bottom: 20px;
+}
+
+.footer-container {
+	position: relative;
+	padding: 50px 50px 46px 42px;
+	background: #333;
+	border-radius: 15px;
+}
+
+.footer-license {
+	width: 320px;
+	margin-right: 102px;
+}
+
+.license-descr {
+	margin-bottom: 50px;
+	font-size: 16px;
+	line-height: 1.9em;
+	color: #fff;
+}
+
+.license-link {
+	font-size: 16px;
+	color: #cc9933;
+}
+
+.address-item:not(:last-child) {
+	margin-bottom: 14px;
+}
+
+.footer-address {
+	font-size: 16px;
+	line-height: 1;
+	font-style: normal;
+	color: #fff
+}
+
+.footer-phone,
+.footer-mail {
+	flex-direction: column;
+}
+
+.footer-social {
+	margin-left: auto;
+}
+
+.social-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.social-link {
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+.social-trip {
+	background: url('../img/owl.svg') 
+	no-repeat center center  / cover;
+}
+
+.social-twitter {
+	background: url('../img/twitter.svg') 
+	no-repeat center center  / cover;
+}
+
+.social-facebook {
+	background: url('../img/facebook.svg') 
+	no-repeat center center  / cover;
+}
+
+.social-vk {
+	background: url('../img/vk.svg') 
+	no-repeat center center  / cover;
+}
+
+.social-inst {
+	background: url('../img/instagram.svg') 
+	no-repeat center center  / cover;
+}
+
+.footer-logo {
+	position: absolute;
+	bottom: 0;
+	right: 175px;
+}
+
+.footer-logo-img {
+	display: block;
+}
+/* footer end */
 
