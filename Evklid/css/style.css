@@ -502,16 +502,23 @@ p {
 	margin-bottom: 32px;
 }
 
+.questions__item {
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -1px;
+	padding: 30px 0;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #cacaca;
+	cursor: pointer;
+	transition: border-color .2s ease-in-out;
+}
+
 .questions__item:first-child {
 	border-top: 1px solid #cacaca;
 }
 
-.questions__item {
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 0;
-	border-bottom: 1px solid #cacaca;
-	cursor: pointer;
+.questions__subtitle {
+	transition: var(--color-transition);
 }
 
 .questions__control {
@@ -522,6 +529,7 @@ p {
 	height: 50px;
 	border-radius: 100%;
 	background: #ececec;
+	transition: var(--background-transition);
 }
 
 .questions__control::before,
@@ -531,6 +539,7 @@ p {
 	width: 70%;
 	height: 1px;
 	background: #666;
+	transition: var(--background-transition);
 }
 
 .questions__control::before {
@@ -539,6 +548,72 @@ p {
 
 .questions__control::after {
 	transform: rotate(90deg);
+}
+
+.questions__item:hover {
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+
+.questions__item:hover .questions__subtitle {
+	color: var(--main-color);
+}
+
+.questions__item:hover .questions__control {
+	background: var(--main-color);
+}
+
+.questions__item:hover .questions__control::before {
+	background: #fff;
+}
+
+.questions__item:hover .questions__control::after {
+	background: #fff;
+}
+
+.questions__item:focus {
+	outline: none;
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+
+.questions__item:focus .questions__subtitle {
+	color: var(--main-color);
+}
+
+.questions__item:focus .questions__control {
+	background: var(--main-color);
+}
+
+.questions__item:focus .questions__control::before {
+	background: #fff;
+}
+
+.questions__item:focus .questions__control::after {
+	background: #fff;
+}
+
+.questions__item:active {
+	border-top-color: #cacaca;
+	border-bottom-color: #cacaca;
+}
+
+.questions__item:active .questions__subtitle {
+	color: var(--text-color-color);
+}
+
+.questions__item:active .questions__control {
+	background: #ececec;
+}
+
+.questions__item:active .questions__control::before {
+	transform: rotate(45deg);
+	background: #666;
+}
+
+.questions__item:active .questions__control::after {
+	transform: rotate(-45deg);
+	background: #666;
 }
 /* questions end */
 
