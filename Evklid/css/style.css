@@ -631,15 +631,44 @@ p {
 	margin-bottom: 20px;
 }
 
+.footer__logo-link:focus {
+	outline: 2px solid var(--main-color);
+}
+
 .footer__nav {
 	margin-bottom: 90px;
 }
 
 .footer__link {
+	padding-bottom: 7px;
 	font-size: 18px;
 	line-height: 2em;
 	font-weight: 600;
 	color: var(--footer-text);
+	background-image: linear-gradient(var(--main-color), var(--main-color));
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0 2px;
+	transition: background-size .2s ease-in-out;
+}
+
+.footer__link:focus {
+	padding-bottom: 0;
+	outline: 2px solid var(--main-color);
+	outline-offset: 7px;
+}
+
+.footer__link:hover {
+	background-size: 100% 2px;
+}
+
+.footer__link:active {
+	padding-bottom: 7px;
+	outline: none;
+	background-image: linear-gradient(var(--active-color), var(--active-color));
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
 }
 
 .footer__social-item:not(:last-child) {
@@ -650,6 +679,7 @@ p {
 	display: block;
 	width: 60px;
 	height: 60px;
+	transition: var(--background-transition);
 }
 
 .footer__social-fb {
@@ -665,6 +695,46 @@ p {
 .footer__social-inst {
 	background: url('../img/icon/insta.svg') 
 	no-repeat center center / cover;
+}
+
+.footer__social-link:focus {
+	outline: 2px solid var(--main-color);
+}
+
+.footer__social-fb:hover {
+	background: url('../img/icon/fb-hover.svg') 
+	no-repeat center center / cover;
+}
+
+.footer__social-vk:hover {
+	background: url('../img/icon/vk-hover.svg') 
+	no-repeat center center / cover;
+}
+
+.footer__social-inst:hover {
+	background: url('../img/icon/insta-hover.svg') 
+	no-repeat center center / cover;
+}
+
+.footer__social-fb:active {
+	outline: none;
+	background: url('../img/icon/fb-active.svg') 
+	no-repeat center center / cover;
+	transition: none;
+}
+
+.footer__social-vk:active {
+	outline: none;
+	background: url('../img/icon/vk-active.svg') 
+	no-repeat center center / cover;
+	transition: none;
+}
+
+.footer__social-inst:active {
+	outline: none;
+	background: url('../img/icon/insta-active.svg') 
+	no-repeat center center / cover;
+	transition: none;
 }
 
 .footer__form-wrap {
@@ -716,14 +786,40 @@ p {
 	color: var(--footer-text);
 }
 
+.form__input:focus,
+.form__textarea:focus {
+	outline: none;
+	background: #666;
+	color: #fff;
+}
+
+.form__input:hover,
+.form__textarea:hover {
+	background: #666;
+}
+
 .form__btn {
 	min-width: 269px;
 	padding: 19px 4px;
 	margin-right: 18px;
+	transition: var(--background-transition);
 	/* font-size: 16px;
 	font-weight: 700;
 	color: #fff;
 	background: #ff9900; */
+}
+
+.form__btn:focus {
+	outline: none;
+	background: rgba(255, 153, 0, 0.7);
+}
+
+.form__btn:hover {
+	background: rgba(255, 153, 0, 0.7);
+}
+
+.form__btn:active {
+	background: var(--active-color);
 }
 
 .form__label {
