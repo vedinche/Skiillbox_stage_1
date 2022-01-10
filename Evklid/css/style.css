@@ -223,6 +223,7 @@ p {
 .header__search:hover path {
 	stroke: var(--main-color);
 }
+
 /* header end */
 
 /* hero start */
@@ -274,7 +275,7 @@ p {
 	background: var(--active-color);
 }
 
-/* .hero__nav {
+.hero__nav {
 	justify-content: space-between;
 	width: 85px;
 	margin: 0 auto;
@@ -294,7 +295,7 @@ p {
 
 .hero__control:not(:last-child) {
 	margin-right: 20px;
-} */
+}
 
 /* hero end */
 
@@ -382,6 +383,7 @@ p {
 .about__right-descr {
 	max-width: 450px;
 }
+
 /* about-end */
 
 /* works start */
@@ -424,11 +426,12 @@ p {
 
 .works__content {
 	position: relative;
-	min-height: 460px;
+	height: 460px;
 }
 
-.works__content *{
-	width: 40%;
+.works__slider-text,
+.works__btn-wrap {
+	width: 43%;
 }
 
 /* .works__slider-text, .works__btn-wrap{
@@ -438,13 +441,11 @@ p {
 .works__content::before {
 	content: '';
 	position: absolute;
-	width: 48%;
+	width: 49%;
 	bottom: 0;
 	right: 0;
 	top: 0;
-	background-image: url("https://img.fonwall.ru/o/9q/zagorodnaya-doroga-asfalt-polya.jpg?route=mid&h=750");
-  background-size: cover;
-  background-position: center;
+	background: url('../img/bg/laptop.jpg') center center / cover;
 }
 
 .works__slider-text {
@@ -639,7 +640,7 @@ p {
 	background-color: #222;
 }
 
-.footer__container	{
+.footer__container {
 	justify-content: space-between;
 }
 
@@ -707,7 +708,7 @@ p {
 	outline: 2px solid var(--main-color);
 }
 
-.footer__social-link:hover path{
+.footer__social-link:hover path {
 	fill: var(--main-color);
 }
 
@@ -715,7 +716,7 @@ p {
 	outline: none;
 }
 
-.footer__social-link:active path{
+.footer__social-link:active path {
 	fill: var(--active-color);
 	transition: none;
 }
