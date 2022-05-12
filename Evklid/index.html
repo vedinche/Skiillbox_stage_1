@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид</title>
   <link rel="shortcut icon" href="img/icon/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/swiper-min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,10 +18,39 @@
     <div class="container header__container flex">
       <div class="burger">
         <button class="burger__btn btn-reset flex">
-          <span class="burger__strip"></span>
-          <span class="burger__strip burger__strip_md"></span>
-          <span class="burger__strip burger__strip_sm"></span>
+          <span class="burger__line burger__line_bg"></span>
+          <span class="burger__line burger__line_md"></span>
+          <span class="burger__line burger__line_sm"></span>
         </button>
+        <nav class="burger__menu">
+          <ul class="burger__list list-reset flex">
+            <li class="burger__item">
+              <a class="burger__link" href="#about">
+                О нас
+              </a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#!">
+                Проекты
+              </a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#works">
+                Этапы
+              </a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#!">
+                Отзывы
+              </a>
+            </li>
+            <li class="burger__item">
+              <a class="burger__link" href="#!">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <a class="header__logo" href="#!">
         <img class="header__logo-img" src="img/logo/header-logo.svg" alt="Логотип">
@@ -69,22 +99,25 @@
   <main class="main">
     <section class="hero section-offset">
       <div class="container">
-        <div class="hero__container flex">
-          <h1 class="hero__title">
-            Проектные решения любой сложности
-          </h1>
-          <p class="hero__descr">
-            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом
-            проектантов
-          </p>
-          <button class="btn btn-reset hero__btn">
-            Заказать расчёт
-          </button>
-          <div class="hero__nav flex">
-            <a class="hero__control hero__control_active" href="#!"></a>
-            <a class="hero__control" href="#!"></a>
-            <a class="hero__control" href="#!"></a>
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Проектные решения любой сложности
+            </h1>
+            <p class="hero__descr">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом
+              проектантов
+            </p>
+            <button class="btn btn-reset hero__btn">
+              Заказать расчёт
+            </button>
           </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__slider-img1"></div>
+            <div class="swiper-slide hero__slider-img2"></div>
+            <div class="swiper-slide hero__slider-img3"></div>
+          </div>
+         <div class="swiper-pagination hero__pagination"></div>
         </div>
       </div>
     </section>
@@ -111,14 +144,14 @@
         <div class="about__bottom flex">
           <div class="about__left flex">
             <div class="about__left-img"></div>
-          <div class="about__left-content flex">
-            <p class="section-descr about__left-descr">
-              Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
-              и&nbsp;реализации новых принципов.
-            </p>
-            <button class="btn btn-reset about__btn">
-              Подробнее
-            </button>
+            <div class="about__left-content flex">
+              <p class="section-descr about__left-descr">
+                Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
+                и&nbsp;реализации новых принципов.
+              </p>
+              <button class="btn btn-reset about__btn">
+                Подробнее
+              </button>
             </div>
           </div>
           <ul class="about__right list-reset">
@@ -179,14 +212,14 @@
                 Проводим консультацию
               </h3>
               <p class="section-descr works__descr">
-                Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
+                Влечет за&nbsp;собой процесс внедрения и модернизации приоритизации разума над эмоциями.
                 В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-                объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных
+                объективно рассмотрены соответствующими инстанциями. А также представители современных социальных
                 резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления.
-                Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные
+                Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
                 исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
                 традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины
-                в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                в целом, однако конкретные выводы, разумеется, призваны к ответу.
               </p>
             </div>
             <div class="works__btn-wrap">
@@ -354,6 +387,8 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
+  <script src="js/swiper-min.js"></script>
 </body>
 
 </html>
