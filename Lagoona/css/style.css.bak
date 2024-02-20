@@ -815,6 +815,7 @@ body {
 }
 
 .footer-container {
+  position: relative;
   padding: 50px 50px 46px 42px;
   background: #333 url('../img/footer-logo.svg') no-repeat bottom 0 right 175px;
   border-radius: 15px;
