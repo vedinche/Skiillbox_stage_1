@@ -1,14 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Художественная галерея Blanchard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Художественная галерея Blanchard</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <img class="logo header__logo" src="img/icon/logo.svg" alt="Логотип">
+      <nav class="nav">
+        <ul class="nav__list list-reset flex">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              О нас
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Галерея
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#catalog" class="nav__link">
+              Каталог
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#events" class="nav__link">
+              События
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#project" class="nav__link">
+              Проекты
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form class="search-form">
+        <button class="search-form__btn btn-reset">
+          <svg class="search-form__img">
+            <use xlink:href="img/icon/icons.svg#search-btn">
+            </use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero section-offset">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Прикоснитесь к&nbsp;прекрасному
+          </h1>
+          <p class="hero__descr">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых
+            предложений
+          </p>
+        </div>
+        <button class="btn btn-reset hero__btn">
+          Подписаться на рассылку
+        </button>
+      </div>
+    </section>
+
+    <section class="about section-offset" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          О&nbsp;нас
+        </h2>
+        <p class="section-descr about__descr">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов
+          и&nbsp;ресурсов.
+          Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой
+          процесс
+          внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество
+          позиционных
+          исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий
+          с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации
+          современных стандартов,
+          действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит,
+          должны
+          быть разоблачены.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery section-offset" id="gallery">
+      <div class="container">
+        <h2 class="section-title section-title--white">
+          Галерея
+        </h2>
+        <div class="gallery__wrap flex">
+          <form class="gallery__form gallery-search">
+            <label class="gallery-search__label" for="19th-century">
+              <input class="gallery-search__input" type="checkbox" id="19th-century" name="19th-century">
+              <span class="gallery-search__text">
+                XIX век
+              </span>
+            </label>
+            <label class="gallery-search__label" for="20th-century">
+              <input class="gallery-search__input" type="checkbox" id="20th-century" name="19th-century" checked>
+              <span class="gallery-search__text">
+                XX век
+              </span>
+            </label>
+            <label class="gallery-search__label" for="modern">
+              <input class="gallery-search__input" type="checkbox" id="modern" name="modern">
+              <span class="gallery-search__text">
+                Современность
+              </span>
+            </label>
+          </form>
+          <ul class="gallery__list list-reset flex">
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/gallery-picture-1.webp" alt="Картина">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/gallery-picture-2.webp" alt="Картина">
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/gallery-picture-3.webp" alt="Картина">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title">
+          Каталог
+        </h2>
+        <p class="section-descr catalog__descr">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+          лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день
+          остаются
+          уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
+        </p>
+        <div class="catalog__list">
+          <article class="catalog-item">
+            <img class="catalog-item__img" src="img/girlandayou.webp" alt="Доменико Гирландайо">
+            <div class="catalog-item__content">
+              <h3 class="section-subtitle catalog-item__subtitle">
+                Доменико Гирландайо
+              </h3>
+              <p class="date catalog-item__date">
+                2&nbsp;июня 1448&ndash;11 января 1494
+              </p>
+              <p class="section-descr catalog-item__descr">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                выпукло,
+                со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+                выступают
+                знатные граждане Флоренции в&nbsp;костюмах того времени).
+              </p>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img class="catalog-item__img" src="img/verokkyo.webp" alt="Андреа дель Верроккьо">
+            <div class="catalog-item__content">
+              <h3 class="section-subtitle catalog-item__subtitle">
+                Андреа дель Верроккьо
+              </h3>
+              <p class="date catalog-item__date">
+                1435&ndash;10 октября 1488
+              </p>
+              <p class="section-descr catalog-item__descr">
+                Творческий путь молодого Андреа, как и&nbsp;многих знаменитых художников и&nbsp;скульпторов эпохи
+                Возрождения,
+                начался с&nbsp;обучения и&nbsp;работы в&nbsp;одной из&nbsp;ювелирных мастерских Флоренции. Там
+                он&nbsp;занимался не&nbsp;только
+                изготовлением драгоценных украшений, но&nbsp;и&nbsp;познавал основы живописи, пластики
+                и&nbsp;архитектуры. Его первым
+                учителем был Джулиано Веррокки, фамилию которого в&nbsp;несколько изменённом виде Андреа заимствовал
+                для своего будущего псевдонима.
+              </p>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img class="catalog-item__img" src="img/kredi.webp " alt="Лоренцо ди Креди">
+            <div class="catalog-item__content">
+              <h3 class="section-subtitle catalog-item__subtitle">
+                Лоренцо ди Креди
+              </h3>
+              <p class="date catalog-item__date">
+                1459&ndash;12 января 1537
+              </p>
+              <p class="section-descr catalog-item__descr">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section-offset" id="events">
+      <div class="container">
+        <h2 class="section-title">
+          События
+        </h2>
+        <div class="events__list">
+          <article class="events__item">
+            <img class="events__img" src="img/events-img-1.webp" alt="Книжная гравюра в живом восприятии">
+            <div class="events__content">
+              <p class="date events__location">Музей им. Щусева</p>
+              <p class="date events__date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</p>
+              <h3 class="section-subtitle events__subtitle">
+                Книжная гравюра в&nbsp;живом восприятии
+              </h3>
+              <p class="section-descr events__descr">
+                Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и&nbsp;сын Ридольфо
+              </p>
+            </div>
+            <button class="btn btn-reset events__btn">
+              Подробнее
+            </button>
+          </article>
+          <article class="events__item">
+            <img class="events__img" src="img/events-img-2.webp" alt="Открытая дискуссия">
+            <div class="events__content">
+              <p class="date events__location">ММОМА</p>
+              <p class="date events__date">24&nbsp;марта 19:00</p>
+              <h3 class="section-subtitle events__subtitle">
+                &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
+              </h3>
+              <p class="section-descr events__descr">
+                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                факта
+              </p>
+            </div>
+            <button class="btn btn-reset events__btn">
+              Подробнее
+            </button>
+          </article>
+          <article class="events__item">
+            <img class="events__img" src="img/events-img-3.webp" alt="Выставка Формация 2020">
+            <div class="events__content">
+              <p class="date events__location">Еврейский музей</p>
+              <p class="date events__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</p>
+              <h3 class="section-subtitle events__subtitle">
+                Выставка &laquo;Формация 2020&raquo;
+              </h3>
+              <p class="section-descr events__descr">
+                Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль
+                в&nbsp;формировании глубокомысленных рассуждений
+              </p>
+            </div>
+            <button class="btn btn-reset events__btn">
+              Подробнее
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-offset" id="project">
+      <div class="container">
+        <h2 class="section-title">
+          Проекты
+        </h2>
+        <p class="section-descr projects__descr">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
+          с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+          их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей
+          деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
+          сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в&nbsp;разрезе
+          маркетинговых и&nbsp;финансовых предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
+          представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
+          очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости.
+        </p>
+        <div class="projects-partners">
+          <h3 class="section-subtitle projects-partners__subtitle">
+            Партнёры проектов:
+          </h3>
+          <ul class="projects-partners__list list-reset">
+            <li class="projects-item">
+              <picture class="projects-partners__img">
+                <img src="img/icon/project-partner-1.png" alt="Партнёры" aria-hidden="true">
+              </picture>
+            </li>
+            <li class="projects-item">
+              <picture class="projects-partners__img">
+                <img src="img/icon/project-partner-2.png" alt="Партнёры" aria-hidden="true">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section-offset">
+      <div class="container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrap flex">
+          <h3 class="section-subtitle contacts__subtitle" id="contacts">
+            Шоурум № 4
+          </h3>
+          <address class="section-descr contacts__address">
+            Леонтьевский переулок, дом 5/1
+          </address>
+          <form class="feedback-form flex">
+            <input class="feedback-form__input" type="text" placeholder="Имя*">
+            <input class="feedback-form__input" type="tel" placeholder="Телефон*">
+            <button class="btn btn-reset feedback-form__btn">
+              Заказать обратный звонок
+            </button>
+          </form>
+          <div class="contacts__messenger massanger">
+            <h3 class="section-subtitle massanger__subtitle">
+              Связаться в один клик
+            </h3>
+            <ul class="massanger__list">
+              <li class="massanger__item">
+                <a class="massanger__link" href="#!">
+                  <svg class="whatsapp">
+                    <use xlink:href="img/icon/icons.svg#whatsapp">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="massanger__item">
+                <a class="massanger__link" href="#!">
+                  <svg class="telegram">
+                    <use xlink:href="img/icon/icons.svg#telegram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="logo footer__logo" src="img/icon/logo.svg" alt="Логотип">
+      <ul class="social footer__social">
+        <li class="social__item">
+          <a class="social__link" href="#!">
+            <svg class="telegram">
+              <use xlink:href="img/icon/icons.svg#vk">
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#!">
+            <svg class="telegram">
+              <use xlink:href="img/icon/icons.svg#ok">
+              </use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
 
 </body>
 
