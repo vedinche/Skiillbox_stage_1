@@ -455,7 +455,8 @@ a:focus {
 }
 
 .articles__preview-image {
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .articles__preview-text {
