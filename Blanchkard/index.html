@@ -14,7 +14,11 @@
 <body>
   <header class="header">
     <div class="container header__container flex">
-      <img class="logo header__logo" src="img/logo.svg" alt="Логотип">
+      <picture class="logo header__logo flex">
+        <source media="(max-width: 767px)" srcset="img/logo_mobile.svg">
+        <source media="(max-width: 1280px)" srcset="img/logo_tablet.svg">
+        <img src="img/logo.svg" alt="Логотип">
+      </picture>
       <nav class="nav">
         <ul class="nav__list list-reset flex">
           <li class="nav__item">
@@ -198,7 +202,7 @@
                 изготовлением драгоценных украшений, но&nbsp;и&nbsp;познавал основы живописи, пластики
                 и&nbsp;архитектуры. Его первым
                 учителем был Джулиано Веррокки, фамилию которого в&nbsp;несколько изменённом виде Андреа заимствовал
-                для своего будущего псевдонима.
+                для&nbsp;своего будущего псевдонима.
               </p>
             </div>
           </article>
@@ -231,16 +235,19 @@
         </h2>
         <div class="events__list flex">
           <article class="events__item flex">
-            <img class="events__img" src="img/events-img-1.webp" alt="Книжная гравюра в живом восприятии">
+            <picture class="events__img">
+              <source media="(max-width: 1280px)" srcset="img/graving_1024.webp">
+              <img src="img/graving.webp" alt="Книжная гравюра в живом восприятии">
+            </picture>
             <div class="events__content">
               <p class="date events__location">Музей им. Щусева</p>
               <p class="date events__date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</p>
               <h3 class="section-subtitle events__subtitle">
-                Книжная гравюра в&nbsp;живом&nbsp;восприятии
+                Книжная&nbsp;гравюра в&nbsp;живом восприятии
               </h3>
               <p class="section-descr events__descr">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили его брат Давид и&nbsp;сын Ридольфо
+                продолжили его&nbsp;брат Давид и&nbsp;сын&nbsp;Ридольфо
               </p>
             </div>
             <button class="btn btn-reset events__btn">
@@ -248,7 +255,10 @@
             </button>
           </article>
           <article class="events__item flex">
-            <img class="events__img" src="img/events-img-2.webp" alt="Открытая дискуссия">
+            <picture class="events__img">
+              <source media="(max-width: 1280px)" srcset="img/discussion_1024.webp">
+              <img src="img/discussion.webp" alt="Открытая дискуссия">
+            </picture>
             <div class="events__content">
               <p class="date events__location">ММОМА</p>
               <p class="date events__date">24&nbsp;марта 19:00</p>
@@ -265,7 +275,10 @@
             </button>
           </article>
           <article class="events__item flex">
-            <img class="events__img" src="img/events-img-3.webp" alt="Выставка Формация 2020">
+            <picture class="events__img">
+              <source media="(max-width: 1280px)" srcset="img/exhibition_1024.webp">
+              <img src="img/exhibition.webp" alt="Выставка Формация 2020">
+            </picture>
             <div class="events__content">
               <p class="date events__location">Еврейский музей</p>
               <p class="date events__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</p>
@@ -333,7 +346,7 @@
               Леонтьевский переулок, дом 5/1
             </address>
           </div>
-          <form class="feedback-form">
+          <form class="feedback-form flex">
             <input class="feedback-form__input" type="text" placeholder="Имя*">
             <input class="feedback-form__input" type="tel" placeholder="Телефон*">
             <button class="btn btn-reset feedback-form__btn">

@@ -155,24 +155,20 @@ body {
 .header__container {
   position: relative;
   z-index: 2;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .logo {
-  display: block;
+  margin-right: 179px;
 }
 
-.header__logo {
-  padding-right: 20px;
+.nav {
+  margin-right: auto;
 }
 
 .nav__item:not(:last-child) {
   margin-right: 96px;
-}
-
-.nav__item:last-child {
-  margin-right: 138px;
 }
 
 .nav__link {
@@ -272,7 +268,7 @@ body {
 }
 
 .hero__content {
-  max-width: 34%;
+  width: 34%;
 }
 
 .hero__title {
@@ -330,7 +326,7 @@ body {
 }
 
 .about__descr {
-  max-width: 67%;
+  width: 67%;
 }
 
 /* #endregion */
@@ -346,12 +342,12 @@ body {
 }
 
 .gallery__title {
-  padding-top: 86px;
-  margin-bottom: 24px;
+  padding-top: 84px;
+  margin-bottom: 26px;
 }
 
 .gallery__wrap {
-  padding-bottom: 76px;
+  padding-bottom: 77px;
   justify-content: space-between;
 }
 
@@ -442,16 +438,16 @@ body {
 
 /* #region---catalog */
 .catalog {
-  margin-bottom: 86px;
+  margin-bottom: 85px;
 }
 
 .catalog__title {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .catalog__descr {
   margin-bottom: 38px;
-  max-width: 68%;
+  width: 68%;
 }
 
 .catalog__list {
@@ -480,7 +476,7 @@ body {
 
 /* #region---events */
 .events {
-  margin-bottom: 86px;
+  margin-bottom: 85px;
 }
 
 .events__title {
@@ -512,12 +508,12 @@ body {
 .events__content {
   margin-bottom: 20px;
   padding-left: 50px;
-  max-width: 90%;
+  width: 90%;
   height: 100%;
 }
 
 .events__date {
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   line-height: 24px;
 }
 
@@ -582,11 +578,11 @@ body {
 }
 
 .projects__title {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .projects__descr {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   width: 67%;
 }
 
@@ -604,8 +600,7 @@ body {
 /* #region---contacts */
 .contacts {
   border: 1px solid #cacaca;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding: 37px 0;
 }
 
 .contacts__wrap {
@@ -662,7 +657,7 @@ body {
   border: 2px solid currentColor;
   border-radius: 100px;
   padding: 13px 4px;
-  width: 329px;
+  min-width: 329px;
   font-weight: 700;
   font-size: 18px;
   outline: 2px solid transparent;

@@ -1,0 +1,183 @@
+@media (max-width: 1490px) {
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .nav {
+    margin-right: 0;
+  }
+
+  .contacts__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts__address {
+    margin-bottom: 30px;
+  }
+
+  .feedback-form {
+    margin-bottom: 30px;
+  }
+
+  .feedback-form__btn {
+    min-width: 343px;
+  }
+
+}
+
+
+@media (max-width: 1280px) {
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .header {
+    padding-top: 33px;
+    padding-bottom: 26px;
+  }
+
+  .header__logo {
+    order: 1;
+  }
+
+.nav {
+  order:3;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.header__search-form {
+  order: 2;
+}
+
+.hero {
+  padding-top: 100px;
+  padding-bottom: 102px;
+}
+
+.hero__content {
+  width: 80%;
+}
+
+.hero__descr {
+  margin-bottom: 135px;
+}
+
+.about__descr {
+  width: 100%;
+}
+
+.gallery__title {
+  margin-bottom: 22px;
+}
+
+.gallery__wrap {
+  flex-direction: column;
+}
+
+.gallery__form {
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+.catalog__descr {
+  width: 100%;
+}
+
+.catalog-item {
+  flex-direction: column;
+  gap: 34px;
+}
+
+.catalog-item__date {
+  margin-bottom: 14px;
+}
+
+.events__list {
+  --gap: 27px;
+}
+
+.events__item {
+  padding-bottom: 54px;
+  min-height: 683px;
+}
+
+.events__img {
+  margin-bottom: 11px;
+}
+
+.events__content {
+  margin-bottom: 20px;
+  padding: 0 34px;
+  width: 100%;
+}
+
+.events__subtitle {
+  margin-bottom: 6px;
+  line-height: 33px;
+}
+
+.events__date {
+  margin-bottom: 0;
+}
+
+.events__location, .events__date {
+  text-align: right;
+}
+
+.events__btn {
+  margin-left: 33px;
+}
+
+.projects__descr {
+  margin-bottom: 21px;
+  width: 100%;
+}
+
+.projects-partners__list {
+  gap: 27px;
+}
+
+.contacts {
+  padding-top: 43px;
+  padding-bottom: 41px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 6px;
+}
+
+.contacts__address {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.feedback-form {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.feedback-form__input {
+  margin-right: 0;
+}
+
+.social__link {
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  padding: 40px 0;
+}
+
+}
+
+
