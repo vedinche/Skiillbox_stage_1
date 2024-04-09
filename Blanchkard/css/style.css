@@ -197,10 +197,6 @@ body {
   opacity: 1;
 }
 
-.nav__link:hover {
-  color: var(--color-mediumviolet);
-}
-
 .nav__link:active {
   color: var(--color-darkviolet);
 }
@@ -233,10 +229,6 @@ body {
 
 .search-form__btn:focus-visible::after {
   opacity: 1;
-}
-
-.search-form__btn:hover {
-  color: var(--color-mediumviolet);
 }
 
 .search-form__btn:active {
@@ -304,10 +296,6 @@ body {
 .hero__btn:focus-visible {
   outline-color: var(--color-mediumviolet);
   outline-offset: 3px;
-}
-
-.hero__btn:hover {
-  outline: 3px solid var(--color-lightviolet);
 }
 
 .hero__btn:active {
@@ -424,10 +412,6 @@ body {
 
 .gallery-search__input:focus-visible+.gallery-search__text {
   color: var(--color-mediumviolet);
-}
-
-.gallery-search__input:hover+.gallery-search__text::before {
-  border-color: var(--color-mediumviolet);
 }
 
 .gallery-search__input:active+.gallery-search__text {
@@ -562,10 +546,6 @@ body {
   color: var(--color-white);
 }
 
-.events__btn:hover {
-  color: var(--color-darkviolet);
-}
-
 .events__btn:active {
   color: var(--color-darkvgray);
 }
@@ -648,11 +628,6 @@ body {
   outline: none;
 }
 
-.feedback-form__input:hover {
-  background: #ececec;
-  outline: none;
-}
-
 .feedback-form__btn {
   border: 2px solid currentColor;
   border-radius: 100px;
@@ -671,11 +646,6 @@ body {
 .feedback-form__btn:focus-visible {
   outline-color: var(--color-mediumviolet);
   outline-offset: 3px;
-}
-
-.feedback-form__btn:hover {
-  color: var(--color-white);
-  background: var(--color-violet);
 }
 
 .feedback-form__btn:active {
@@ -732,18 +702,9 @@ body {
   outline: none;
 }
 
-
-.massanger__link--green:hover {
-  color: rgba(48, 191, 57, 0.5);
-}
-
 .massanger__link--blue:focus-visible {
   color: rgba(38, 165, 228, 0.5);
   outline: none;
-}
-
-.massanger__link--blue:hover {
-  color: rgba(38, 165, 228, 0.5);
 }
 
 .massanger__link:active {
@@ -790,10 +751,6 @@ border-radius: 100%;
 .social__link:focus-visible {
   color: var(--color-white);
   outline: none;
-}
-
-.social__link:hover {
-  color: var(--color-white);
 }
 
 .social__link:active {
