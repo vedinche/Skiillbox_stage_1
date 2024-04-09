@@ -141,6 +141,10 @@
     margin-left: 33px;
   }
 
+  .projects {
+    margin-bottom: 81px;
+}
+
   .projects__descr {
     margin-bottom: 21px;
     width: 100%;
@@ -151,7 +155,7 @@
   }
 
   .contacts {
-    padding-top: 43px;
+    padding-top: 42px;
     padding-bottom: 41px;
   }
 
