@@ -232,9 +232,6 @@
 
   .events__list {
     flex-direction: column;
-  }
-
-  .events__list {
     --offsets: 0;
     --gap: 30px;
   }

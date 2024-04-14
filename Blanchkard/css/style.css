@@ -24,7 +24,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -487,6 +487,7 @@ body {
 
 .events__img {
   margin-bottom: 13px;
+  min-width: 100%;
 }
 
 .events__content {
